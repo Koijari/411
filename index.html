@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi-fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tyyli.css">
+    <script type="text/javascript" src="kentat.js"></script>
+    <link rel="icon" type="x-icon" href="tag.ico">
+    <title>Lomake</title>
+</head>
+<body>
+    <header>
+        <h1>Rekisteröitymislomake</h1>
+    </header>
+
+    <main>
+        <h3>Siirry kentästä toiseen tab-näppäimellä</h3>
+       
+        <form name="kaavake" onsubmit="return validateForm()">
+            <label for="kayttaja">KäyttäjäID:</label>
+                <input type="text" id="kayttaja" name="kayttaja" autocomplete="username" onfocus="value=''" size="15">
+                <span id="k1"></span><br>
+            <label for="sala">Salasana:</label>
+                <input type="password" id="sala" name="sala" autocomplete="current-password" onfocus="value=''" size="15">
+                <span id="k2"></span><br>
+            <label for="nimi">Nimi:</label>
+                <input type="text" id="nimi" name="nimi" onfocus="value=''" size="25">
+                <span id="k3"></span><br>
+            <label for="osoite">Osoite:</label>
+                <input type="text" id="osoite" name="osoite" onfocus="value=''" size="25">
+                <span id="k4"></span><br>
+            <label for="maa">Maa:</label>
+                <select name="maa" id="maa">
+                    <option value="">(valitse maa)</option>
+                    <option value="SF">Suomi</option>
+                    <option value="SW">Sverige</option>
+                    <option value="NO">Norge</option>
+                    <option value="DM">Denmark</option>
+                    <option value="IS">Island</option>
+                </select>
+                <span id="k5"></span><br>
+            <label for="pnro">Postinumero:</label>
+                <input type="text" id="pnro" name="pnro" onfocus="value=''" size="25">
+                <span id="k6"></span><br>
+            <label for="sposti">Sähköposti:</label>
+                <input type="text" id="sposti" onfocus="value=''" size="25">
+                <span id="k7"></span><br>
+            
+            <label for="spuoli" class="valinta">Sukupuoli:</label>
+                <span class="minradio">Mies:</span>
+                    <input type="radio" id="mies" name="spuoli" title="mies">
+                <span class="minradio">Nainen:</span>            
+                    <input type="radio" id="nainen" name="spuoli" title="nainen">
+                <span id="k8"></span><br>
+                <span class="valinta">Kieli:</span>
+                <label for="suomi" class="minradio">Suomi:</label>
+                    <input type="checkbox" name="suomi" id="suomi" title="Suomi">
+                <label for="muu"style="width: 9em;">Muu kuin suomi:</label>
+                    <input type="checkbox" name="muu" id="muu" title="Muu kuin suomi">
+                <span id="k9"></span><br>
+                <label for="lisa">Lisätiedot:</label>
+                    <textarea name="lisa" cols="25" rows="5"></textarea>
+            <input type="submit" value="Lähetä">            
+        </form>
+    
+</body>
+</html>

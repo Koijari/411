@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  width: 100%;  
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  margin-left: 10%;
+}
+
+main {
+  line-height: 2em;
+}
+
+label, .valinta {
+  display: inline-block;
+  width: 15%;
+  text-align: right;
+}
+
+.minradio {
+  width: min-content;
+}
+
+input[type=submit] {
+  margin: 0 5%;
+  padding: 1% 1%;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  color: black;
+  background-color: gray;
+}
+
+#k1, #k2, #k3, #k4, #k5, #k6, #k7, #k8, #k9 {
+  max-width: 100%;
+  width: 60%;
+  float: right;
+}
+
+@media only screen and (max-width:1200px) {
+  body {
+    clear: both;
+  }
+
+  h1, h3 {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 10%;
+  }
+
+  #k1, #k2, #k3, #k4, #k5, #k6, #k7, #k8, #k9 {
+    max-width: 100%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  #k1, #k2, #k3, #k4, #k5, #k6, #k7, #k8, #k9 {
+    display: flex;
+    max-width: 100%;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  main {
+    line-height: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  #k1, #k2, #k3, #k4, #k5, #k6, #k7, #k8, #k9 {
+    max-width: 100%;
+    width: 50%;
+  }
+
+  input {
+    display: inline;
+  }
+
+  label, .valinta {
+    display: block;
+    margin-left: 2%;
+  }
+}  
